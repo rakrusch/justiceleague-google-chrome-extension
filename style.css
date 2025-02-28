@@ -1,6 +1,51 @@
 body {
     display: flex;
     box-sizing: border-box;
-    font-family: "EB Garamond", serif, "Roboto"; 
-    background-color: ;
+    font-family: "EB Garamond", serif, "Roboto";
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    /* Glassmorphism Effect */
+    background: rgba(255, 255, 255, 0.2);
+    /* Transparent white */
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+   
+    /* Border and Shadow for Glass Effect */
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 10px 10px 60px 10px rgba(0, 0, 0, 0.2);
+    
+    /* Size and Position */
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.content-area {
+    margin-top: 30px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    z-index: 999;
+}
+
+.close-button:hover {
+    color: red;
 }
