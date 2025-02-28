@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Hello Extension",
+  "name": "Justice Summaries Extension",
   "version": "1.0",
-  "description": "A simple Hello World! extension",
+  "description": "Summarize privacy policies",
   "icons": {
       "16": "icon.png",
       "48": "icon.png",
