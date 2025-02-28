@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const yesButton = document.getElementById('yesButton');
   const noButton = document.getElementById('noButton');
   const closeButton = document.getElementById('closeButton');
+  const settingsButton = document.getElementById('settingsButton');
 
 
 
@@ -22,6 +23,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   closeButton.addEventListener('click', () => {
     window.close();
+  });
+
+  settingsButton.addEventListener('click', () => {
+    window.location.href = 'settings-page.html';
   });
 
 });
