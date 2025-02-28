@@ -80,3 +80,54 @@ body {
     color: rgb(107, 107, 107);
 }
 
+/* Style for Yes and No buttons */
+#yesButton,
+#noButton {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    /* Makes buttons rounded */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+/* Yes Button - Green */
+#yesButton {
+    background: hsl(140, 60%, 40%);
+    color: white;
+}
+
+#yesButton:hover {
+    background: hsl(140, 80%, 50%);
+    /* More saturated on hover */
+    box-shadow: 0 6px 10px rgba(0, 255, 0, 0.4);
+    transform: scale(1.05);
+    /* Slightly enlarges */
+}
+
+/* No Button - Red */
+#noButton {
+    background: hsl(0, 70%, 50%);
+    color: white;
+}
+
+#noButton:hover {
+    background: hsl(0, 85%, 60%);
+    /* More saturated on hover */
+    box-shadow: 0 6px 10px rgba(255, 0, 0, 0.4);
+    transform: scale(1.05);
+    /* Slightly enlarges */
+}
+
+/* Center the buttons */
+.content-area {
+    display: flex;
+    gap: 15px;
+    /* Space between buttons */
+}
