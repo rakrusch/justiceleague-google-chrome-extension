@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   const yesButton = document.getElementById('yesButton');
   const noButton = document.getElementById('noButton');
+  const closeButton = document.getElementById('closeButton');
+
 
 
   yesButton.addEventListener('click', () => {
@@ -17,5 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
   noButton.addEventListener('click', () => {
     window.close();
   });
+
+  closeButton.addEventListener('click', () => {
+    window.close();
+  });
+
 });
-//test
