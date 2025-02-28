@@ -1,8 +1,8 @@
 hml, body{
     border-radius: 20px;
     /* Makes the popup rounded */
-    overflow: hidden;
-    /* Prevents content from spilling over */
+    overflow-y: auto;
+    max-height: 450px;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     box-sizing: border-box;
     font-family: "Yuji Syuku", serif, "Roboto", "EB Garamond";
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
 
     /* Glassmorphism Effect */
@@ -40,10 +40,12 @@ body {
     
     /* Size and Position */
     width: 400px;
-    height: 300px;
+    height: auto;
+    max-height: 450px;
     margin: auto;
     padding: 20px;
     position: relative;
+    overflow-y: auto;
 }
 
 /* Animation remains unchanged */
