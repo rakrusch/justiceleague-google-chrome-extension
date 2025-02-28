@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const greetingButton = document.getElementById('yesButton');
+  const yesButton = document.getElementById('yesButton');
+  const noButton = document.getElementById('noButton');
 
-  greetingButton.addEventListener('click', () => {
+
+  yesButton.addEventListener('click', () => {
       // Send a message to the background script
       //chrome.runtime.sendMessage({ type: 'GREETING', greeting: 'Hello, background!' }, (response) => {
           // Display an alert with the response message
@@ -10,6 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
       window.location.href = 'summary-page.html';
 
+  });
+
+  noButton.addEventListener('click', () => {
+    window.close();
   });
 });
 //test
