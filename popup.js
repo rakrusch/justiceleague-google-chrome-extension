@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   noButton.addEventListener('click', () => {
-    window.close();
+    window.location.href = 'settings-page.html';
+    //window.close();
   });
 
   closeButton.addEventListener('click', () => {
