@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
           // Display an alert with the response message
       //    alert('Response from background: ' + response.response);
       //});
-
+      
       window.location.href = 'summary-page.html';
 
   });
