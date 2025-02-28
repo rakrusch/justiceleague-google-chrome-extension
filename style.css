@@ -343,3 +343,8 @@ p {
     margin-right: 15px;
 }
 
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px
+}
