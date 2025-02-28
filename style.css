@@ -80,6 +80,27 @@ body {
     color: rgb(107, 107, 107);
 }
 
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    z-index: 999;
+}
+
+.home-button:hover {
+    color: rgb(107, 107, 107);
+}
+
 /* Style for Yes and No buttons */
 #yesButton,
 #noButton {
