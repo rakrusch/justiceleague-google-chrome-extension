@@ -1,6 +1,6 @@
-##How to use this extension##
+# How to use this extension
 
-Steps:
+## Steps:
 1) Clone this repo on to your computer
 2) Enter this link into your browser: chrome://extensions/
 3) In the top right of the page, turn 'Developer mode' ON
