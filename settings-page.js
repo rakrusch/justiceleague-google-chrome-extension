@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const homeButton = document.getElementById('homeButton');
     const dropbtn = document.getElementById('.dropbtn');
     const languageOptions = document.querySelectorAll('.dropup-content a');
+    //const englishButton = document.getElementById('englishButton');
+    //const arabicButton = document.getElementById('arabicButton');
+    //const swahiliButton = document.getElementById('swahiliButton');
+    //const languageButtons = document.querySelectorAll('.language-button');
 
     closeButton.addEventListener('click', () => {
       window.close();
@@ -13,10 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     languageOptions.forEach(option => {
-        option.addEventListener('click', function(event) {
-            event.preventDefault();
-            const selectedLanguage = this.textContent;
-            dropbtn.textContent = selectedLanguage + " ▼";
+        option.addEventListener('click', function() {
+          const languageCode = this.dataset.lang || this.id.replace('lang-', '');
+          //const selectedLanguage = this.textContent;
+          closeButton.textContent = languageCode;
         });
     });
   });
