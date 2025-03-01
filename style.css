@@ -1,350 +1,350 @@
 hml, body{
-    border-radius: 20px;
-    /* Makes the popup rounded */
-    overflow-y: auto;
-    max-height: 450px;
+  border-radius: 20px;
+  /* Makes the popup rounded */
+  overflow-y: auto;
+  max-height: 450px;
 }
 
 body {
-    display: flex;
-    box-sizing: border-box;
-    font-family:  "Yuji Syuku", serif, "Roboto", "EB Garamond";
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
+  display: flex;
+  box-sizing: border-box;
+  font-family:  "Yuji Syuku", serif, "Roboto", "EB Garamond";
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 
-    /* Glassmorphism Effect */
-    background: rgba(255, 255, 255, 0.15);
-    /* Subtle transparency */
-    backdrop-filter: blur(25px) saturate(160%);
-    -webkit-backdrop-filter: blur(25px) saturate(160%);
-    
+  /* Glassmorphism Effect */
+  background: rgba(255, 255, 255, 0.15);
+  /* Subtle transparency */
+  backdrop-filter: blur(25px) saturate(160%);
+  -webkit-backdrop-filter: blur(25px) saturate(160%);
+  
 
-    /* Radial Gradient Overlay */
-    background-image: radial-gradient(circle at center,
-            rgba(255, 120, 120, 0.3) 0%,
-            rgba(255, 160, 110, 0.25) 40%,
-            rgba(255, 190, 130, 0.2) 70%,
-            rgba(255, 255, 255, 0.1) 100%);
-    background-blend-mode: overlay;
-    /* Blends with transparency */
-    
+  /* Radial Gradient Overlay */
+  background-image: radial-gradient(circle at center,
+          rgba(255, 120, 120, 0.3) 0%,
+          rgba(255, 160, 110, 0.25) 40%,
+          rgba(255, 190, 130, 0.2) 70%,
+          rgba(255, 255, 255, 0.1) 100%);
+  background-blend-mode: overlay;
+  /* Blends with transparency */
+  
 
-    /* Glow Effect */
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+  /* Glow Effect */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 
-    /* Animation */
-    animation: rainbow 10s linear infinite;
-    
-    /* Size and Position */
-    width: 400px;
-    height: auto;
-    max-height: 450px;
-    margin: auto;
-    padding: 20px;
-    position: relative;
-    overflow-y: auto;
+  /* Animation */
+  animation: rainbow 10s linear infinite;
+  
+  /* Size and Position */
+  width: 400px;
+  height: auto;
+  max-height: 450px;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  overflow-y: auto;
 }
 
 /* Animation remains unchanged */
 @keyframes rainbow {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+      background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+      background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 .content-area {
-  margin-top: 30px;
+margin-top: 30px;
 }
 
 h1 {
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-  background: none;
-  border: none;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  text-align: center;
-  z-index: 999;
+position: absolute;
+top: 10px;
+right: 10px;
+cursor: pointer;
+font-size: 18px;
+font-weight: bold;
+background: none;
+border: none;
+padding: 0;
+width: 24px;
+height: 24px;
+line-height: 24px;
+text-align: center;
+z-index: 999;
 }
 
 .close-button:hover {
-  color: red;
+color: red;
 }
 
 .settings-button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-  background: none;
-  border: none;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  text-align: center;
-  z-index: 999;
+position: absolute;
+top: 10px;
+left: 10px;
+cursor: pointer;
+font-size: 18px;
+font-weight: bold;
+background: none;
+border: none;
+padding: 0;
+width: 24px;
+height: 24px;
+line-height: 24px;
+text-align: center;
+z-index: 999;
 }
 
 .settings-button:hover {
-  color: rgb(107, 107, 107);
+color: rgb(107, 107, 107);
 }
 
 .home-button {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-  background: none;
-  border: none;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  text-align: center;
-  z-index: 999;
+position: absolute;
+top: 10px;
+left: 10px;
+cursor: pointer;
+font-size: 18px;
+font-weight: bold;
+background: none;
+border: none;
+padding: 0;
+width: 24px;
+height: 24px;
+line-height: 24px;
+text-align: center;
+z-index: 999;
 }
 
 .home-button:hover {
-  color: rgb(107, 107, 107);
+color: rgb(107, 107, 107);
 }
 
 /* Style for Yes and No buttons */
 #yesButton,
 #noButton {
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 10px;
-    /* Makes buttons rounded */
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    /* Subtle shadow */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  /* Makes buttons rounded */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  /* Subtle shadow */
 }
 
 /* Yes Button - Green */
 #yesButton {
-    background: hsla(140, 60%, 40%, 0.725);
-    color: white;
+  background: hsla(140, 60%, 40%, 0.725);
+  color: white;
 }
 
 #yesButton:hover {
-  background: hsl(140, 80%, 50%);
-  /* More saturated on hover */
-  box-shadow: 0 6px 10px rgba(0, 255, 0, 0.4);
-  transform: scale(1.05);
-  /* Slightly enlarges */
+background: hsl(140, 80%, 50%);
+/* More saturated on hover */
+box-shadow: 0 6px 10px rgba(0, 255, 0, 0.4);
+transform: scale(1.05);
+/* Slightly enlarges */
 }
 
 /* No Button - Red */
 #noButton {
-    background: hsla(0, 70%, 50%, 0.641);
-    color: white;
+  background: hsla(0, 70%, 50%, 0.641);
+  color: white;
 }
 
 #noButton:hover {
-  background: hsl(0, 85%, 60%);
-  /* More saturated on hover */
-  box-shadow: 0 6px 10px rgba(255, 0, 0, 0.4);
-  transform: scale(1.05);
-  /* Slightly enlarges */
+background: hsl(0, 85%, 60%);
+/* More saturated on hover */
+box-shadow: 0 6px 10px rgba(255, 0, 0, 0.4);
+transform: scale(1.05);
+/* Slightly enlarges */
 }
 
 /* Center the buttons */
 .content-area {
-    display: flex;
-    gap: 20px;
-    /* Space between buttons */
+  display: flex;
+  gap: 20px;
+  /* Space between buttons */
 }
 
-/* from https://www.w3schools.com/howto/howto_css_dropup.asp */
 /* Dropup Button */
 .dropbtn {
-  background-color: #844848;
-  padding: 12px 20px;
-  color: white;
-  font-size: 16px;
-  border-radius: 10px;
-  text-align: center;
-  min-width: 150px;
-  border: none;
+background-color: #844848;
+padding: 12px 20px;
+color: white;
+font-size: 16px;
+border-radius: 10px;
+text-align: center;
+min-width: 150px;
+border: none;
+cursor: pointer;
 }
 
-/* Hover Effect */
-.dropbtn:hover {
-    background-color: #f07e7e;
+/* Click Effect */
+.dropbtn:active {
+  background-color: #f07e7e;
 }
 
 /* The container <div> - needed to position the dropup content */
 .dropup {
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
 }
 
 /* Dropup content (Hidden by Default) */
 .dropup-content {
-  display: none;
-  position: absolute;
-  right: 0px;
-  top: 100%;
-  background-color: #f1f1f1;
-  min-width: 50px;
-  border-radius: 10px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  overflow: hidden;
+display: none; /* Default is hidden */
+position: absolute;
+right: 0px;
+top: 100%;
+background-color: #f1f1f1;
+min-width: 150px;
+border-radius: 10px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+z-index: 1;
+overflow: hidden;
+transition: opacity 0.3s ease-in-out;
+opacity: 0;
+visibility: hidden;
+}
+
+/* Show dropdown when the "show" class is added via JavaScript */
+.dropup-content.show {
+display: block;
+opacity: 1;
+visibility: visible;
 }
 
 /* Links inside the dropup */
 .dropup-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  transition: background 0.3s ease-in-out;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+transition: background 0.3s ease-in-out;
 }
 
 /* Change color of dropup links on hover */
 .dropup-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropup menu on hover */
-.dropup:hover .dropup-content {
-  display: block;
-}
-
-/* Change the background color of the dropup button when the dropup content is shown */
-.dropup:hover .dropbtn {
-  background-color: #f07e7e;
+background-color: #ddd;
 }
 
 /* Selected Language Display */
 .selected-language {
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 10px;
-    /* Space between dropup and text */
-    color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 10px;
+  /* Space between dropup and text */
+  color: #333;
 }
 
 /* Better Spacing for Machine Translation */
 .switch-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    /* Space between text and toggle */
-    margin-top: 20px;
-    /* Increase spacing */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  /* Space between text and toggle */
+  margin-top: 20px;
+  /* Increase spacing */
 }
 
 /* from https://www.w3schools.com/howto/howto_css_switch.asp */
 /* The switch - the box around the slider */
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
 }
 
 /* Hide default HTML checkbox */
 .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+opacity: 0;
+width: 0;
+height: 0;
 }
 
 /* The slider */
 .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: 0.4s;
+transition: 0.4s;
 }
 
 .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: 0.4s;
+transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196f3;
+background-color: #2196f3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
+box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
 }
 
 /* Rounded sliders */
 .slider.round {
-  border-radius: 34px;
+border-radius: 34px;
 }
 
 .slider.round:before {
-  border-radius: 50%;
+border-radius: 50%;
 }
 
 p {
-    font-size: 18px;
-    font-weight: bold;
-    margin-right: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 15px;
 }
 
 .header-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px
+  display: flex;
+  justify-content: center;
+  margin-top: 40px
 }

@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const languageButton = document.querySelector(".dropbtn");
   const languageOptions = document.querySelectorAll(".dropup-content a");
 
+  const dropContent = document.querySelector(".dropup-content");
+
   const savedLanguage = localStorage.getItem("selectedLanguage");
 
   applyTranslation(savedLanguage);
@@ -18,6 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
     languageButton.textContent = language; // Update the button text
     console.log("Language changed to:", language);
   }
+
+  languageButton.addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevents event bubbling
+    dropContent.classList.toggle("show"); // Toggle the "show" class
+  });
+
+    // Close dropdown when clicking outside
+  document.addEventListener("click", function (event) {
+    if (!languageButton.contains(event.target) && !dropContent.contains(event.target)) {
+        dropContent.classList.remove("show"); // Hide dropdown
+    }
+  });
 
   closeButton.addEventListener("click", () => {
     window.close();
