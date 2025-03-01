@@ -5,6 +5,7 @@ const translations = {
     summaryTitle: "Summary",
     summaryLinkTitle: "Expert-written",
     risksTitle: "Risk Analysis:",
+    saferWebsites: "Consider using safer websites: ",
     riskBody:
       "An important risk to consider with this policy is that X may collect biometric information, which is not standard throughout many privacy policies. It is also important to consider your interactions with X, as information associated with your account may be shared with law enforcement.",
     summaryItems: [
@@ -23,6 +24,7 @@ const translations = {
     summaryTitle: "ملخص",
     summaryLinkTitle: "مكتوب من قبل الخبراء",
     risksTitle: "تحليل المخاطر:",
+    saferWebsites: "فكر في استخدام مواقع أكثر أمانًا: ",
     riskBody:
       "مخاطر مهمة يجب مراعاتها هي أن X قد يجمع معلومات بيومترية، وهو أمر غير شائع في العديد من سياسات الخصوصية. كما من المهم أن تضع في اعتبارك تفاعلاتك مع X، حيث قد تتم مشاركة المعلومات المرتبطة بحسابك مع جهات إنفاذ القانون.",
     summaryItems: [
@@ -40,6 +42,7 @@ const translations = {
     summaryTitle: "Resumen",
     summaryLinkTitle:"Escrito por expertos",
     risksTitle: "Análisis de Riesgos:",
+    saferWebsites: "Considere utilizar sitios web más seguros: ",
     riskBody:
       "Un riesgo importante a considerar con esta política es que X pueda recopilar información biométrica, lo cual no es estándar en muchas políticas de privacidad. También es importante considerar sus interacciones con X, ya que la información asociada con su cuenta puede compartirse con las autoridades.",
     summaryItems: [
@@ -58,6 +61,7 @@ const translations = {
     summaryTitle: "Muhtasari",
     summaryLinkTitle: "Ulioandikwa na Mtaalam",
     risksTitle: "Uchambuzi wa Hatari:",
+    saferWebsites: "Fikiria kutumia tovuti salama zaidi: ",
     riskBody:
       "Hatari muhimu ya kuzingatia ni kwamba X inaweza kukusanya taarifa za kibayometriki, jambo ambalo si la kawaida katika sera nyingi za faragha. Pia ni muhimu kuzingatia mwingiliano wako na X, kwani taarifa zinazohusiana na akaunti yako zinaweza kushirikiwa na vyombo vya kutekeleza sheria.",
     summaryItems: [
@@ -85,10 +89,12 @@ function applyTranslation(language) {
 
   // Update headings
   const summaryTitleLink = document.getElementById("summaryTitleLink");
+  const saferWebsites = document.getElementById("saferWebsites");
   const summaryTitle = document.getElementById("summaryTitle");
   summaryTitle.textContent = translation.summaryTitle;
   summaryTitleLink.textContent = translation.summaryLinkTitle;
   summaryTitleLink.href = translation.link; // Set the link dynamically
+  saferWebsites.textContent = translation.saferWebsites;
 
   document.getElementById("risksTitle").textContent = translation.risksTitle;
   document.getElementById("riskBody").textContent = translation.riskBody;
