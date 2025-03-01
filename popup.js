@@ -41,6 +41,11 @@ const translations = {
     yes: "نعم",
     no:"لا"
   },
+  Spanish: {
+    title: "¿Le gustaría resumir esta política de privacidad?",
+    yes: "Sí",
+    no: "No"
+  },
   Swahili: {
     title: "Je, ungependa kufanya muhtasari wa sera hii ya faragha?",
     yes: "ndio",

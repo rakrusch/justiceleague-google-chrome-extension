@@ -48,6 +48,10 @@ const translations = {
     language: "لغة:",
     machineTranslate: "الترجمة الآلية:",
   },
+  Spanish: {
+    language: "lenguaje:",
+    machineTranslate: "traducción automática:"
+  },
   Swahili: {
     language: "Lugha:",
     machineTranslate: "Ufasiri wa mashine:",
