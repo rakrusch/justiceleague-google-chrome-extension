@@ -1,4 +1,4 @@
-How to use this extension
+##How to use this extension##
 
 Steps:
 1) Clone this repo on to your computer
