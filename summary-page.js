@@ -1,10 +1,12 @@
 // Translation dictionary
 const translations = {
   English: {
-      summaryTitle: "Summary",
+      link: "",
+      summaryTitle: "Expert-Written Summary",
       risksTitle: "Risk Analysis:",
       riskBody: "An important risk to consider with this policy is that X may collect biometric information, which is not standard throughout many privacy policies. It is also important to consider your interactions with X, as information associated with your account may be shared with law enforcement.",
       summaryItems: [
+          "Safety Score: 7.5/10",
           "May collect biometric information",
           "May collect device & connection information, like apps installed or IP address",
           "Information may be used to train AI models",
@@ -14,10 +16,12 @@ const translations = {
       privacyPolicyLink: "Click here to view this privacy policy in its entirety."
   },
   Arabic: {
-      summaryTitle: "ملخص",
+      link: "",
+      summaryTitle: "ملخص مكتوب من قبل الخبراء",
       risksTitle: "تحليل المخاطر:",
       riskBody: "مخاطر مهمة يجب مراعاتها هي أن X قد يجمع معلومات بيومترية، وهو أمر غير شائع في العديد من سياسات الخصوصية. كما من المهم أن تضع في اعتبارك تفاعلاتك مع X، حيث قد تتم مشاركة المعلومات المرتبطة بحسابك مع جهات إنفاذ القانون.",
       summaryItems: [
+          "درجة السلامة: 7.5/10",
           "قد يتم جمع المعلومات البيومترية",
           "قد يتم جمع معلومات الجهاز والاتصال، مثل التطبيقات المثبتة أو عنوان IP",
           "قد يتم استخدام المعلومات لتدريب نماذج الذكاء الاصطناعي",
@@ -27,10 +31,12 @@ const translations = {
       privacyPolicyLink: "اضغط هنا لعرض سياسة الخصوصية بالكامل."
   },
   Swahili: {
-      summaryTitle: "Muhtasari",
+      link: "",
+      summaryTitle: "Muhtasari-ulioandikwa na Mtaalam",
       risksTitle: "Uchambuzi wa Hatari:",
       riskBody: "Hatari muhimu ya kuzingatia ni kwamba X inaweza kukusanya taarifa za kibayometriki, jambo ambalo si la kawaida katika sera nyingi za faragha. Pia ni muhimu kuzingatia mwingiliano wako na X, kwani taarifa zinazohusiana na akaunti yako zinaweza kushirikiwa na vyombo vya kutekeleza sheria.",
       summaryItems: [
+          "Alama ya Usalama: 7.5/10",
           "Inaweza kukusanya taarifa za kibayometriki",
           "Inaweza kukusanya taarifa za kifaa na muunganisho, kama programu zilizowekwa au anwani ya IP",
           "Taarifa inaweza kutumiwa kufundisha mifano ya AI",
@@ -50,7 +56,10 @@ function applyTranslation(language) {
   }
 
   // Update headings
-  document.getElementById("summaryTitle").textContent = translation.summaryTitle;
+  const summaryTitleLink = document.getElementById("summaryTitleLink");
+  summaryTitleLink.textContent = translation.summaryTitle;
+  summaryTitleLink.href = translation.privacyPolicyLink; // Set the link dynamically
+
   document.getElementById("risksTitle").textContent = translation.risksTitle;
   document.getElementById("riskBody").textContent = translation.riskBody;
   document.getElementById("privacyPolicyLink").textContent = translation.privacyPolicyLink;

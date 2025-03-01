@@ -8,7 +8,7 @@ hml, body{
 body {
     display: flex;
     box-sizing: border-box;
-    font-family: "Yuji Syuku", serif, "Roboto", "EB Garamond";
+    font-family:  "Yuji Syuku", serif, "Roboto", "EB Garamond";
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
