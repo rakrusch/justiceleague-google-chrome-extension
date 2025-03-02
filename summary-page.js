@@ -18,6 +18,8 @@ const translations = {
     ],
     privacyPolicyLink:
       "Click here to view this privacy policy in its entirety.",
+    policyLastUpdate: "Policy last updated: 11/15/24",
+    lastUpdate: "Updated: 03/02/25"
   },
   Arabic: {
     link: "https://imgur.com/a/Gu3zLWH",
@@ -36,6 +38,9 @@ const translations = {
       "اللغة الإنجليزية هي اللغة المرجعية لتفسير شروط سياسة خصوصية X",
     ],
     privacyPolicyLink: "اضغط هنا لعرض سياسة الخصوصية بالكامل.",
+    policyLastUpdate: "آخر تحديث للسياسة: 15/11/24",
+    lastUpdate: "تم التحديث: 03/02/25"
+
   },
   Spanish: {
     link: "https://imgur.com/a/Gu3zLWH",
@@ -55,6 +60,8 @@ const translations = {
     ],
     privacyPolicyLink:
       "Haga clic aquí para ver esta política de privacidad en su totalidad.",
+    policyLastUpdate: "Última actualización de la política: 15/11/24",
+    lastUpdate: "Actualizado: 02/03/25"
   },
   Swahili: {
     link: "https://imgur.com/a/Gu3zLWH",
@@ -73,6 +80,8 @@ const translations = {
       "Kiingereza ndicho lugha ya marejeo kwa kufasiri masharti ya sera ya faragha ya X",
     ],
     privacyPolicyLink: "Bofya hapa kuona sera ya faragha kwa ukamilifu.",
+    policyLastUpdate: "Sera ilisasishwa mara ya mwisho: 11/15/24",
+    lastUpdate: "Ilisasishwa: 03/02/25"
   },
 };
 
@@ -91,10 +100,14 @@ function applyTranslation(language) {
   const summaryTitleLink = document.getElementById("summaryTitleLink");
   const saferWebsites = document.getElementById("saferWebsites");
   const summaryTitle = document.getElementById("summaryTitle");
+  const policyLastUpdate = document.getElementById("policyUpdate");
+  const lastUpdate = document.getElementById("update");
   summaryTitle.textContent = translation.summaryTitle;
   summaryTitleLink.textContent = translation.summaryLinkTitle;
   summaryTitleLink.href = translation.link; // Set the link dynamically
   saferWebsites.textContent = translation.saferWebsites;
+  policyLastUpdate.textContent = translation.policyLastUpdate;
+  lastUpdate.textContent = translation.lastUpdate;
 
   document.getElementById("risksTitle").textContent = translation.risksTitle;
   document.getElementById("riskBody").textContent = translation.riskBody;
