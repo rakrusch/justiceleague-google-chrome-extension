@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //applyTranslation(savedLanguage);
 
   if (savedLanguage) {
+    languageButton.textContent = localStorage.getItem("selectedLanguage");
     applyTranslation(savedLanguage);
   }
 
@@ -74,6 +75,7 @@ const translations = {
 };
 function applyTranslation(language) {
   const translation = translations[language];
+  
   document.getElementById("lang").textContent = translation.language;
   document.getElementById("machineTranslate").textContent = translation.machineTranslate;
 }
