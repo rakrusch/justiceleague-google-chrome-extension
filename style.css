@@ -347,3 +347,20 @@ p {
   justify-content: center;
   margin-top: 40px
 }
+
+.alternative-websites {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.links-container {
+    display: flex;
+    gap: 5px;
+}
+
+.alternative-header {
+    font-weight: bolder;
+}
