@@ -72,6 +72,7 @@ h1 {
     font-weight: bolder;
     text-align: center;
     color: #333;
+    margin-bottom: 5px;
 }
 
 .close-button {
@@ -351,7 +352,7 @@ p {
 
 .alternative-websites {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     text-align: left;
     width: 100%;
@@ -359,9 +360,21 @@ p {
 
 .links-container {
     display: flex;
+    margin-top: 11.5px;
     gap: 5px;
 }
 
 .alternative-header {
+    font-weight: bolder;
+}
+
+.date-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.date {
+    font-style: italic;
+    text-align: left;
     font-weight: bolder;
 }
