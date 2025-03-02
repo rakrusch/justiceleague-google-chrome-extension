@@ -8,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const savedLanguage = localStorage.getItem("selectedLanguage");
 
-  applyTranslation(savedLanguage);
+  //applyTranslation(savedLanguage);
 
   if (savedLanguage) {
-    languageButton.textContent = savedLanguage;
+    applyTranslation(savedLanguage);
   }
 
   // Function to change language
