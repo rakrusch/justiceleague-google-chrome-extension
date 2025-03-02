@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const yesButton = document.getElementById("yesButton");
   const noButton = document.getElementById("noButton");
   const closeButton = document.getElementById("closeButton");
-  const settingsButton = document.getElementById("settingsButton");
+  // const settingsButton = document.getElementById("settingsButton");
 
   yesButton.addEventListener("click", () => {
     // Send a message to the background script
@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
     window.close();
   });
 
-  settingsButton.addEventListener("click", () => {
-    window.location.href = "settings-page.html";
-  });
+  // settingsButton.addEventListener("click", () => {
+    // window.location.href = "settings-page.html";
+  // });
 
   const savedLanguage = localStorage.getItem("selectedLanguage") || "English";
   applyTranslation(savedLanguage);

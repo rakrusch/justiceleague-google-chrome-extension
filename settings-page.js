@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function setLanguage(language) {
     localStorage.setItem("selectedLanguage", language); // Save language
     languageButton.textContent = language; // Update the button text
+    applyTranslation(localStorage.getItem("selectedLanguage"));
     console.log("Language changed to:", language);
   }
 
@@ -38,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   homeButton.addEventListener("click", () => {
-    window.location.href = "popup.html";
+    window.location.href = "summary-page.html";
   });
 
   languageOptions.forEach((option) => {
