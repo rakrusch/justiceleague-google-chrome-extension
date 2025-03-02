@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   
-  applyTranslation(savedLanguage);
+  //applyTranslation(savedLanguage);
 });
 
 const translations = {
