@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   homeButton.addEventListener("click", () => {
-    window.location.href = "summary-page.html";
+    window.location.href = "popup.html";
   });
 
   languageOptions.forEach((option) => {
