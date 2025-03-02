@@ -2,8 +2,8 @@
 const translations = {
   English: {
     link: "https://imgur.com/a/Gu3zLWH",
-    summaryTitle: "Summary",
-    summaryLinkTitle: "Expert-written",
+    summaryTitle: "Expert-Written Summary",
+    summaryLinkTitle: "Learn more about our experts",
     risksTitle: "Risk Analysis:",
     saferWebsites: "Consider using safer websites: ",
     riskBody:
@@ -21,8 +21,8 @@ const translations = {
   },
   Arabic: {
     link: "https://imgur.com/a/Gu3zLWH",
-    summaryTitle: "ملخص",
-    summaryLinkTitle: "مكتوب من قبل الخبراء",
+    summaryTitle: "ملخص مكتوب من قبل الخبراء",
+    summaryLinkTitle: "معرفة المزيد عن خبرائنا",
     risksTitle: "تحليل المخاطر:",
     saferWebsites: "فكر في استخدام مواقع أكثر أمانًا: ",
     riskBody:
@@ -39,8 +39,8 @@ const translations = {
   },
   Spanish: {
     link: "https://imgur.com/a/Gu3zLWH",
-    summaryTitle: "Resumen",
-    summaryLinkTitle:"Escrito por expertos",
+    summaryTitle: "Resumen escrito por expertos",
+    summaryLinkTitle:"Conozca más sobre nuestros expertos",
     risksTitle: "Análisis de Riesgos:",
     saferWebsites: "Considere utilizar sitios web más seguros: ",
     riskBody:
@@ -58,8 +58,8 @@ const translations = {
   },
   Swahili: {
     link: "https://imgur.com/a/Gu3zLWH",
-    summaryTitle: "Muhtasari",
-    summaryLinkTitle: "Ulioandikwa na Mtaalam",
+    summaryTitle: "Muhtasari-ulioandikwa na Mtaalam",
+    summaryLinkTitle: "Jifunze zaidi kuhusu wataalam wetu",
     risksTitle: "Uchambuzi wa Hatari:",
     saferWebsites: "Fikiria kutumia tovuti salama zaidi: ",
     riskBody:

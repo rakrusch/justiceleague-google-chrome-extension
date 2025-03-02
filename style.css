@@ -35,17 +35,17 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 
-  /* Animation */
-  animation: rainbow 10s linear infinite;
-  
-  /* Size and Position */
-  width: 400px;
-  height: auto;
-  max-height: 450px;
-  margin: auto;
-  padding: 20px;
-  position: relative;
-  overflow-y: auto;
+    /* Animation */
+    animation: rainbow 10s linear infinite;
+    
+    /* Size and Position */
+    width: 400px;
+    height: auto;
+    max-height: 450px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    overflow-y: auto;
 }
 
 /* Animation remains unchanged */
@@ -68,11 +68,11 @@ margin-top: 30px;
 }
 
 h1 {
-  font-size: 20px;
-  font-weight: bolder;
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .close-button {
@@ -338,9 +338,9 @@ border-radius: 50%;
 }
 
 p {
-  font-size: 18px;
-  font-weight: bold;
-  margin-right: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 15px;
 }
 
 .header-container {
